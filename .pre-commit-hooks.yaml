@@ -1,0 +1,9 @@
+- id: kyverno
+  name: kyverno (via docker)
+  description: kyverno provided by docker
+  entry: kyverno validate
+  args: [.]
+  language: docker
+  always_run: true
+  types: [yaml]
+  pass_filenames: false
