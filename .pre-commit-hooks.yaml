@@ -1,9 +1,14 @@
-- id: kyverno
-  name: kyverno (via docker)
-  description: kyverno provided by docker
+- id: kyverno-validate
+  name: kyverno-validate (via system)
+  description: kyverno provided by system
+  language: system
   entry: kyverno validate
-  args: [.]
-  language: docker
   always_run: true
   types: [yaml]
-  pass_filenames: false
+- id: kyverno-test
+  name: kyverno-test (via system)
+  description: kyverno provided by system
+  language: system
+  entry: kyverno test
+  always_run: true
+  types: [yaml]

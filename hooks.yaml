@@ -1,9 +1,0 @@
-- id: kyverno
-  name: kyverno (via docker)
-  description: kyverno provided by docker
-  args: [.]
-  always_run: true
-  types: [yaml]
-  pass_filenames: false
-  language: docker_image
-  entry: --entrypoint kyverno validate kyverno-image-here:latest
