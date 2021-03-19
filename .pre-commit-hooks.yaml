@@ -1,0 +1,14 @@
+- id: kyverno-validate
+  name: kyverno-validate (via system)
+  description: kyverno provided by system
+  language: system
+  entry: kyverno validate
+  always_run: true
+  types: [yaml]
+- id: kyverno-test
+  name: kyverno-test (via system)
+  description: kyverno provided by system
+  language: system
+  entry: kyverno test
+  always_run: true
+  types: [yaml]
